@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@600&family=Merriweather:ital@0;1&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@600&family=Lato:ital,wght@0,300;0,400;1,300&family=Merriweather:ital@0;1&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Karla:wght@600&family=Lato:ital,wght@0,300;0,400;1,300&family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleProductPage.css">
+    <title>Product Page</title>
+</head>
+
+<body>
+    <heaader>
+        <div class="navigation"> 
+          <img id="menu-icon" src="img\menu.png">     
+            <ul class="logo-container">
+                <li><img src="img\logo.png"></li>
+                <li id="company-name">Tree of Life Cosmetics</li>
+            </ul>
+            <ul class="navigation-container">  
+                <li><a href="#">About Us</a></li>
+                <li> <a href="#">Products</a></li>
+                <li><a href="#">Follow Us</a></li>
+            </ul>
+        </div>
+    </heaader>  
+
+ <!-- Product-->
+    <div class="product-card">
+    
+        <div class="first-line">
+          <div class="slider-container">
+              <div class="slider-main-image">
+                <img id="main-image" src="img/product-slider1.png" alt="Main Image">
+                <button class="arrow left-arrow" onclick="slide(-1)">&#9664;</button>
+                <button class="arrow right-arrow" onclick="slide(1)">&#9654;</button>
+              </div>
+          
+              <div class="slider-thumbnails">
+                <img class="thumbnail" src="img/product-slider1.png" alt="Thumbnail 1">
+                <img class="thumbnail" src="img/product-slider2.png" alt="Thumbnail 2">
+                <img class="thumbnail" src="img/product-slider3.png" alt="Thumbnail 3">
+                <img class="thumbnail" src="img/product-slider4.png" alt="Thumbnail 4">
+              </div>
+              
+          </div>
+          <div class="information-container">
+          
+              <h2>GerberaGlow Natural Face Tint</h2>
+              <hr>
+              <h3>Product Overview</h3>
+          
+              <p>Discover the allure of nature's palette with our GerberaGlow Natural Face Tint. This unique product is your passport to attaining an effervescent, youthful complexion reminiscent of the freshness of dawn.</p>
+
+              <h3>Inspiration Behind the Tint:</h3>
+              <p>Drawing from the natural splendor of Gerbera daisies, known for their brilliant and striking colors, our face tint captures the essence of these blooms. Just as a Gerbera daisy adds a touch of life and color to any bouquet, our tint is designed to seamlessly amplify your skin's natural charm.</p>
+          
+          </div>
+        </div> 
+          <div class ="key-features">
+            <h3>Key Features</h3>
+            <hr>
+            <ul>
+             <li><strong>Natural Glow:</strong> Infused with gerbera extract, known for its skin-brightening properties, our face tint brings a soft, luminous finish to your skin.</li>
+             <li><strong>Lightweight & Buildable:</strong> Our easily blendable formula allows you to achieve the desired coverage, from sheer to medium, without ever feeling heavy or greasy.</li>
+             <li><strong>Skin-Loving Ingredients:</strong> Alongside gerbera extract, we've blended a nourishing mix of botanical oils, aloe vera, and hyaluronic acid to hydrate and condition your skin.</li>
+             <li><strong>Long-Lasting:</strong> Designed for all-day wear, GerberaGlow ensures that you maintain a fresh, dewy look from morning till night.</li>
+             <li><strong>Eco-Friendly:</strong> Packaged in recyclable glass jars and made with sustainably sourced ingredients, we aim to be as kind to the planet as we are to your skin.</li>
+           </ul>
+          </div>
+       
+       
+
+        <div class="dropdown-info">
+          <div>
+            <hr>
+              <h3 onmouseover="toggleInfoOnHover('ingredientsList')" onclick="toggleInfoOnClick('ingredientsList')">Ingredients</h3>
+              <ul id="ingredientsList">
+                  <li>Organic Gerbera Extract</li>
+                  <li>Aloe Vera</li>
+                  <li>Jojoba Oil</li>
+                  <li>Hyaluronic Acid</li>
+                  <li>Rosewater</li>
+                  <li>Mineral Pigments</li>
+                  <li>Vitamin E</li>
+              </ul>
+          </div>
+          <div>
+            <hr>
+              <h3 onmouseover="toggleInfoOnHover('goodToKnowList')" onclick="toggleInfoOnClick('goodToKnowList')">Good to Know</h3>
+              <ul id="goodToKnowList">
+                  <li>Vegan and cruelty-free</li>
+                  <li>Free from parabens, sulfates, and synthetic fragrances</li>
+                  <li>Dermatologically tested</li>
+              </ul>
+          </div>
+      </div>
+      
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
