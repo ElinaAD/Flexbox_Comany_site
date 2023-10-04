@@ -1,4 +1,4 @@
-# Tree of Life - Portfolio Site
+# Tree of Life 
 
 A flexbox-based company site showcasing a sample landing page and a sample product page. 
 The main functionality is its responsive design, ensuring aesthetic appeal across a variety of devices. 
